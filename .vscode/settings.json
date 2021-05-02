@@ -1,0 +1,12 @@
+{
+  "config.glslangValidatorPath": "/usr/local/Cellar/glslang/",
+  "glsllint.linkShader": true,
+  "glsllint.useIncludeDirOfFile": true,
+  "glsllint.additionalStageAssociations": {
+    ".frag.glsl": "frag",
+    ".glsl": "frag",
+    ".fs": "frag",
+    ".vs": "vert"
+  },
+  "glsl-canvas.uniforms": {}
+}
