@@ -33,7 +33,7 @@ void main(){
   st.x*=u_resolution.x/u_resolution.y;
   vec3 color=vec3(0.);
   
-  color=circle(st,.2,vec2(.5),colorB);
+  color=circle(st,.2,vec2(.5),colorC);
   color/=circle(st,.18,vec2(.55),color);
   
   gl_FragColor=vec4(vec3(color),1.);
