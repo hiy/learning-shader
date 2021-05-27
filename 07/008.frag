@@ -8,7 +8,7 @@ precision mediump float;
 uniform vec2 u_resolution;
 
 vec3 drawBorder(vec2 st,vec2 bl_pos,vec2 tr_pos){
-  vec3 color=vec3(0.);
+  vec3 color=vec3(0.,0.,0.);
   vec2 bl=step(vec2(bl_pos.x,bl_pos.y),st);// bottom-left
   vec2 tr=step(vec2(tr_pos.x,tr_pos.y),1.-st);// top-right
   
