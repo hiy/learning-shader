@@ -10,18 +10,11 @@ uniform float u_time;
 vec2 brickTile(vec2 _st,float _zoom){
   _st*=_zoom;
   
-  //このサンプルを、時間とともにブロックがずれていくアニメーションにしてください。
-  // if((step(1.,mod(_st.y,2.))) > 0.) {
-    //  _st.x+=1.*u_time + .5;
-  // } else {
-    //  _st.x+=1.*u_time;
-  // }
-  
-  // 偶数行が左に、奇数行が右に動くアニメーションを作りましょう。
-  if((step(1.,mod(_st.y,2.)))>0.){
-    _st.x+=-1.*u_time;
+  //行方向ではなく列方向に対して同じ効果を適応することはできますか。
+  if((step(1.,mod(_st.x,2.)))>0.){
+    _st.y+=1.*u_time+.5;
   }else{
-    _st.x+=1.*u_time;
+    _st.y+=1.*u_time;
   }
   
   return fract(_st);
